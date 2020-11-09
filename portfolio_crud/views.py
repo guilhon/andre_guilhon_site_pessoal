@@ -18,7 +18,7 @@ def listar_planetas(request):
 	paginator = Paginator(lista_dos_planetas, 10)
 	page_number = request.GET.get('page')
 	lista_dos_planetas = paginator.get_page(page_number)
-	return render(request, 'portfolio_CRUD.html', {'lista_dos_planetas':lista_dos_planetas})
+	return render(request, 'portfolio_crud.html', {'lista_dos_planetas':lista_dos_planetas})
 
 def adicionar_planeta(request):
 	if request.method == 'POST':
@@ -30,7 +30,7 @@ def adicionar_planeta(request):
 			return redirect('listar_planetas')
 	else:
 		formulario = planetasForm()
-	return render(request, 'portfolio_CRUD/adicionar_planeta.html', {'formulario':formulario})
+	return render(request, 'portfolio_crud/adicionar_planeta.html', {'formulario':formulario})
 
 def editar_planeta(request, id):
 	planeta_escolhido = get_object_or_404(planetas, id=id)
@@ -40,11 +40,11 @@ def editar_planeta(request, id):
 		formulario = planetasForm()
 		messages.success(request, 'Planeta alterado com sucesso.')
 		return redirect('listar_planetas')
-	return render(request, 'portfolio_CRUD/editar_planeta.html', {'formulario':formulario})
+	return render(request, 'portfolio_crud/editar_planeta.html', {'formulario':formulario})
 
 def ver_planeta(request, id):
 	planeta_escolhido = get_object_or_404(planetas, id=id)
-	return render(request, 'portfolio_CRUD/ver_planeta.html', {'planeta_escolhido':planeta_escolhido})
+	return render(request, 'portfolio_crud/ver_planeta.html', {'planeta_escolhido':planeta_escolhido})
 
 def excluir_planeta(request,id):
 	planeta_escolhido = get_object_or_404(planetas, id=id)
@@ -52,7 +52,7 @@ def excluir_planeta(request,id):
 		planeta_escolhido.delete()
 		messages.warning(request, 'Planeta excluído com sucesso.')
 		return redirect('listar_planetas')
-	return render(request, "portfolio_CRUD/excluir_planeta.html", {'planeta_escolhido': planeta_escolhido})
+	return render(request, "portfolio_crud/excluir_planeta.html", {'planeta_escolhido': planeta_escolhido})
 
 def inserir_planetas(request):
 
