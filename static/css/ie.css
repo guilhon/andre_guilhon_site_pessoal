@@ -1,0 +1,34 @@
+/* ------------------------------------------
+  OLD IE STYLES
+--------------------------------------------- */
+
+.js .menu_fixo {
+  position: relative;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.menu_fixo {
+  float: right;
+  width: auto;
+}
+
+.menu_fixo li {
+  width: auto;
+}
+
+.menu_fixo a {
+  border-left: 1px solid white;
+  padding: 1.02em 2em;
+  text-align: center;
+  border-top: 0;
+  float: left;
+  width: auto;
+  margin: 0;
+}
+
+.menu_fixo .active a {
+  background: transparent;
+}

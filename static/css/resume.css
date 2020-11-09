@@ -1,0 +1,332 @@
+/*!
+ * Start Bootstrap - Resume v5.0.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0054a6; /*cor do nome ANDRÉ e dos títulos do currículo*/
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+  font-size: 4rem;
+  text-align: center;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 480px) {
+  h2 {
+  font-size: 3rem;
+  text-align: center;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  h3 {
+  text-align: center;
+  }
+}
+
+p.lead {
+  font-size: 1.15rem; /*tamanho da fonte do resumo profissional*/
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem; /*tamanho da fonte dos subtítulos*/
+}
+
+@media (max-width: 480px) {
+  .subheading {
+  text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+  position: relative;
+  left: 7%;
+  }
+}
+
+
+.social-icons a { /*Todas as configurações dos icones das redes sociais*/
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #0054a6; /*cor dos icones das redes sociais*/
+  color: #fff !important; /*cor branca dos botões das redes sociais*/
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #007cf4; /*ahover nos icones das redes sociais*/
+}
+
+.dev-icons {
+  font-size: 3rem; /*Tamanho dos ícones das habilidades/skills*/
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38; /* */
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e; /* */
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 12rem;
+    max-height: 12rem;
+    border: 0.5rem solid #3099ff; /*Cor da borda da minha foto. Para alterar no 
+    mobile utilizar a classe img-fluid-mobile dentro de bootstrap*/
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  /*max-width: 75rem; aqui*/
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+/*@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}*/
+
+.bg-primary {
+  background-color: #0054a6 !important; /*BACKGROUND do menu*/ 
+}
+
+.text-primary {
+  color: #4d5359 !important; /*cor do nome GUILHON*/ 
+}
+
+.justificado {
+  text-align: justify;
+}
+
+.youtube-img {
+  width: 30px;
+  height: 30px;
+  background: url(../img/youtube-img.png) left no-repeat; 
+  display: inline-block;
+}
+
+.linkedin-img {
+  width: 118px;
+  height: 30px;
+  background: url(../img/linkedin-img.png) left no-repeat; 
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .linkedin-img {
+  position: relative;
+  left: 32%;
+  }
+}
+
+a { 
+  text-decoration: none !important;
+  color: #0054a6;
+}
+
+a:hover, a:focus, a:active { 
+  color: #00a651;
+}
+
+.depoimento {
+  font-style: italic;
+}
+
+@media (max-width: 991px) {
+  .centraliza-texto {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .centraliza-youtube {
+  position: relative;
+  left: 45%;
+  }
+}
+
+/*@media (min-width: 992px) { 
+  .div-mobile {
+  display: none;
+  }
+}
+
+@media (max-width: 991px) { 
+  .div-mobile {
+  width: 100%;
+  height: 210px;
+  display: block;
+  border: solid red 1px;
+  }
+}*/
+
+
+
+
+/* ------------------------------------------
+  Estilos da Galeria de Fotos
+--------------------------------------------- */
+
+.gallery-block.grid-gallery{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.gallery-block.grid-gallery .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+gallery-block.grid-gallery .heading h2{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.grid-gallery a:hover{
+  opacity: 0.8;
+}
+
+.gallery-block.grid-gallery .item img{
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+}
+
+.gallery-block.grid-gallery .item{
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+
+  .gallery-block.grid-gallery .scale-on-hover:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+

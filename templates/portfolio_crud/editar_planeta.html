@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Editar Planeta</title>
+
+    <link rel="shortcut icon" href="{% static "img/favicon.png" %}">
+    <link rel="stylesheet" href="{% static "node_modules/bootstrap/compilado/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "node_modules/bootstrap/compilado/estilo.css" %}">
+  </head>
+  <body>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-warning mb-3">
+<div class="container">
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'adicionar_planeta' %}"><button type="button" class="btn btn-dark">Adicionar Novo Planeta</button></a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="{% url 'listar_planetas' %}"><button type="button" class="btn btn-dark">Listar Planetas</button></a>
+		</li>
+    <!--<li class="nav-item">
+      <a class="nav-link" href="{% url 'listar_planetas' %}"><button type="button" class="btn btn-dark" disabled>Voltar</button></a>
+    </li>-->
+	</ul>
+	<form class="form-inline ">
+		<input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+		<button class="btn btn-success" type="Submit">Ir</button>
+	</form>	
+</div>
+</nav>
+
+<section>
+
+  <div class="container">
+
+    <form method="post" novalidate>
+      {% csrf_token %}
+
+    {{ formulario.non_field_errors }}
+
+      <div class="form-group">
+        {{ formulario.planeta.errors }}
+        <label for="form_planeta"><strong>Qual o nome do Planeta?</strong></label>
+        <input type="text" class="form-control" id="form_planeta" placeholder="" name="{{ formulario.planeta.name }}" value="{{ formulario.planeta.value|default_if_none:"" }}">
+        <small id="emailHelp" class="form-text text-muted">Ótimo! Mudar o nome do planeta pode ser bacana. Qual será o novo nome?</small>
+      </div>
+      <div class="form-group">
+        {{ formulario.tipo.errors }}
+        <label for="form_tipo"><strong>De que tipo ele é?</strong></label>
+        <select id="form_tipo" name="{{ formulario.tipo.name }}"value="{{ formulario.tipo.value|default_if_none:"" }}">
+          <option>Indeterminado</option>
+          <option>Rochoso</option>
+          <option>Gasoso</option>
+        </select>
+        <small id="emailHelp" class="form-text text-muted">Rochoso como a Terra ou Gasoso com Júpiter?</small>
+      </div>
+      <div class="form-group">
+        {{ formulario.massa.errors }}
+        <label for="form_massa"><strong>Qual a massa do seu planeta?</strong></label>
+        <input type="text" class="form-control" id="form_massa" placeholder="" name="{{ formulario.massa.name }}" value="{{ formulario.massa.value|default_if_none:"" }}">
+        <small id="emailHelp" class="form-text text-muted">Perdeu ou ganhou massa?</small>
+      </div>
+
+      <button type="submit" class="btn btn-success">Salvar</button>
+      <a href="{% url 'listar_planetas' %}" class="btn btn-info" role="button" aria-pressed="true">Voltar</a>
+
+    </form>
+
+  </div>
+
+</section>
+
+    <script src="{% static "node_modules/jquery/dist/jquery.js" %}"></script>
+    <script src="{% static "node_modules/popper.js/dist/umd/popper.js" %}"></script>
+    <script src="{% static "node_modules/bootstrap/dist/js/bootstrap.js" %}"></script>
+
+</body>
+</html>
+
+
