@@ -21,7 +21,7 @@ def listar_planetas(request):
 	return render(request, 'portfolio_crud.html', {'lista_dos_planetas':lista_dos_planetas})
 
 def adicionar_planeta(request):
-	if request.method == 'POST':
+	if request.method == 'POST': # Se colocar GET exclui sem perguntar pois o padrão é GET
 		formulario = planetasForm(request.POST or None)
 		if formulario.is_valid():
 			formulario.save()
@@ -48,7 +48,7 @@ def ver_planeta(request, id):
 
 def excluir_planeta(request,id):
 	planeta_escolhido = get_object_or_404(planetas, id=id)
-	if request.method == 'POST':
+	if request.method == 'POST': # Se colocar GET exclui sem perguntar pois o padrão é GET
 		planeta_escolhido.delete()
 		messages.warning(request, 'Planeta excluído com sucesso.')
 		return redirect('listar_planetas')

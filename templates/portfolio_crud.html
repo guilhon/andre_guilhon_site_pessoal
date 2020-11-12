@@ -27,8 +27,8 @@
 		</li>
 	</ul>
 	<form class="form-inline ">
-		<input class="form-control ml-4 mr-2" type="search" placeholder="Buscar..." name="q" value="{{ request.GET.q }}">
-		<button class="btn btn-success" type="Submit">Ir</button>
+		<input class="form-control mt-1 mr-1" type="search" placeholder="Buscar..." name="q" value="{{ request.GET.q }}">
+		<button class="btn btn-success mt-2 mr-1" type="Submit">Ir</button>
 	</form>	
 </div>
 </nav>
@@ -50,9 +50,9 @@
     <tr>
       <!--<th scope="col">#</th>-->
       <th scope="col">Nome</th>
-      <th scope="col">Tipo</th>
-      <th scope="col">Massa (Terra = 1,0)</th>
-      <th scope="col">Data Criação/Edição</th>
+      <th scope="col" class="oculto1">Tipo</th>
+      <th scope="col" class="oculto1">Massa (Terra = 1,0)</th>
+      <th scope="col" class="oculto1 oculto2">Data Criação/Edição</th>
       <th scope="col">Opções</th>
     </tr>
   </thead>
@@ -60,12 +60,12 @@
   	{% for i in lista_dos_planetas %}
     <tr>
       <th scope="row">{{i.planeta}}</th>
-      <td>{{i.tipo}}</td>
-      <td>{{i.massa}}</td>
-      <td>{{i.data_mod}}</td>
-      <td><a href="{% url 'ver_planeta' i.id %}" class="btn btn-primary mx-1">Ver</button></a>
-      	<a href="{% url 'editar_planeta' i.id %}" class="btn btn-warning mx-1">Editar</button></a>
-      	  <a href="{% url 'excluir_planeta' i.id %}" class="btn btn-danger">Excluir</button></a></td>
+      <td class="oculto1">{{i.tipo}}</td>
+      <td class="oculto1">{{i.massa}}</td>
+      <td class="oculto1 oculto2">{{i.data_mod}}</td>
+      <td><a href="{% url 'ver_planeta' i.id %}" class="btn btn-primary mt-1 mr-1">Ver</button></a>
+      	  <a href="{% url 'editar_planeta' i.id %}" class="btn btn-warning mt-1 mr-1">Editar</button></a>
+      	  <a href="{% url 'excluir_planeta' i.id %}" class="btn btn-danger mt-1 mr-1">Excluir</button></a></td>
     </tr>
     {% endfor %}
   </tbody>
