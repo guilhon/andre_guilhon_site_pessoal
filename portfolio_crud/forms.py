@@ -5,4 +5,4 @@ class planetasForm(forms.ModelForm):
 	class Meta:
 		model = planetas
 		fields = ['planeta', 'tipo', 'massa']
-		
+

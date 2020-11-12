@@ -19,6 +19,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
 'guilhon.pythonanywhere.com',
 'www.andreguilhon.com.br']
 
+#STATIC_ROOT = "/home/guilhon/andre_guilhon_site_pessoal/static"
 
 # Application definition
 
