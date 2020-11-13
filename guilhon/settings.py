@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'principal',
     'portfolio_crud',
+    'portfolio_loja',
 ]
 
 MIDDLEWARE = [
@@ -135,6 +136,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# Abaixo você pode substituir por BASE_DIR / "static", também funciona
+#`Parece que funciona também se tirar todos o código abaixo.
 STATICFILES_DIRS = [
-    STATIC_DIR,# Ou substituir por BASE_DIR / "static", também funciona
+    STATIC_DIR,
 ]
