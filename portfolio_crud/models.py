@@ -15,4 +15,8 @@ class planetas(models.Model):
 	def __str__(self):
 		return self.planeta
 
+	class Meta:
+		verbose_name = 'Planeta'
+		verbose_name_plural = 'Planetas'
+		ordering = ['planeta']
 

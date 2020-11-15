@@ -85,6 +85,8 @@ except ImportError:
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
+# PODE COMENTAR ALGUMAS DESSES LINHAS OU TODAS PARA DIMINUIR A SEGURANÇA A SENHA DO DJANGO.
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
