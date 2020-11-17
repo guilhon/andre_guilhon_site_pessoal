@@ -1,0 +1,69 @@
+Terra: 12
+
+Lua: 3
+
+Mercúrio: 1
+
+Vênus: 1
+
+Marte: 1
+
+Júpiter: 3816
+
+Saturno: 1140
+
+Urano: 238
+
+Netuno: 204
+
+Kepler
+3
+Seu nome original é Kepler-10. É o menor exoplaneta já registrado, sendo que sua existência foi anunciada em janeiro de 2011. Este é um mundo rochoso, apenas 1,4 vezes maior do que a Terra, que orbita uma estrela fora de nosso sistema solar.
+
+KOI
+12
+Seu nome original é KOI-314C. Ele tem a mesma massa que a Terra, mas é 60% maior no diâmetro, o que significa que ele deve ter uma atmosfera muito espessa e gasosa. Ele orbita uma estrela-anã vermelha a cerca de 200 anos-luz da Terra.
+
+Gliese
+127
+O Gliese581e mantinha o título de menor planeta alienígena até o Kepler-10b ser descoberto. Este planeta fica extremamente próximo de sua estrela-mãe e completa uma órbita a cada 3,15 dias. Por isso, é provavelmente muito quente para ter alguma forma vida.
+
+TrES-4
+6488
+TrES-4 tem cerca de 1,7 vez o tamanho de Júpiter e pertence a uma pequena subclasse dos chamados planetas gasosos — que têm densidades extremamente baixas. O planeta está localizado a cerca de 1,4 mil anos-luz de distância da Terra e orbita em torno de sua estrela-mãe em três dias e meio.
+
+AEgir
+45 
+Seu nome original é Epsilon Eridani b. Ele orbita uma estrela semelhante ao Sol e fica apenas a 10,5 anos-luz de distância da Terra. É tão perto de nós que os telescópios poderão, em breve, serem capazes de fotografá-lo.
+
+Inferno
+60
+Seu nome original é CoRoT-7b. Foi o primeiro planeta rochoso confirmado fora do nosso sistema solar, mas ele não se parece com um lugar particularmente agradável para se viver. Parecendo estar “preso” à sua estrela-mãe, o planeta marca infernais 2,2 mil graus Celsius. Imagina só o calorzinho?
+
+Trissolar
+4350
+Seu nome original é HD 188753. O planeta tem três sóis, sendo que a sua estrela principal é similar em massa ao nosso próprio Sol. Ele é também muito quente, já que orbita muito perto do sol principal, completando uma órbita a cada três dias e meio.
+
+Mundo do Gelo
+66
+Seu nome original é OGLE-2005-BLG-390L b. Com uma temperatura de superfície de 220 graus Celsius negativos, o planeta extra-solar conhecido como OGLE-2005-BLG-390L b é provavelmente o mais frio já descoberto fora do sistema solar. Ele tem cerca de 5,5 vezes a massa da Terra e os cientistas supõem que ele seja rochoso. Ele orbita uma estrela anã vermelha a 28 mil anos-luz de distância daqui, tornando-o também o exoplaneta mais distante conhecido atualmente.
+
+WASP
+5724
+O planeta se chama WASP-12b. Possui temperatura de 2,2 mil graus Celsius e orbita sua estrela a uma distância mais próxima do que qualquer outro mundo conhecido: apenas 3,4 milhões de quilômetros. O WASP-12b é também um planeta gasoso, tendo em torno de 1,5 vez a massa de Júpiter.
+
+Super Leve
+1908
+O planeta se chama HAT-P-1. Tem cerca da metade da massa de Júpiter, mas é cerca de 1,76 vez maior. Ele poderia flutuar na água, se houvesse uma banheira grande o suficiente para segurá-lo.
+
+Super Netuno
+300
+O planeta se chama, originalmente, HAT-P-11b. Ele orbita muito perto de sua estrela, girando uma vez a cada 5 dias. Como resultado, ele atinge uma temperatura de quase 600 graus Celsius.
+
+Super Terra
+30
+Tem cerca de duas a dez vezes a massa do nosso próprio planeta. Alguns cientistas acreditam que tais mundos poderiam ser mais suscetíveis a desenvolver as condições para a vida, porque seus núcleos são quentes, tornando propícias as agitações geológicas através de vulcanismo e placas tectônicas.
+
+Planeta Água
+78
+O planeta se chama, originalmente, 1214b. Ele possui semelhanças com a Terra, pois é rochoso e rico em água. Ele orbita uma estrela anã vermelha, sendo o único exoplaneta da categoria "Super-Terra" com uma atmosfera confirmada. O planeta tem cerca de três vezes o tamanho da Terra e 6,5 vezes mais massa
